@@ -1,0 +1,35 @@
+.DS_Store
+.env
+.env.*
+*.local
+
+# Local tools and generated output
+.idea/
+.vscode/
+node_modules/
+__pycache__/
+*.py[cod]
+*.log
+.cache/
+dist/
+build/
+coverage/
+
+# Private credentials and mobile signing material never belong here
+.secrets/
+secrets/
+credentials/
+*.jks
+*.keystore
+*.p8
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileprovision
+*service-account*.json
+*service_account*.json
+*credentials*.json
+google-play-publisher*.json
+key.properties
+local.properties

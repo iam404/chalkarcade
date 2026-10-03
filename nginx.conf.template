@@ -1,0 +1,60 @@
+map $uri $chalk_cache_control {
+    ~^/assets/site-config[.]js$  "no-cache, no-store, must-revalidate";
+    ~^/assets/                  "public, max-age=604800";
+    default                     "no-cache";
+}
+
+server {
+    listen ${PORT};
+    listen [::]:${PORT};
+    server_name _;
+
+    root /usr/share/nginx/html;
+    index index.html;
+    charset utf-8;
+    server_tokens off;
+
+    add_header Cache-Control $chalk_cache_control always;
+    add_header Content-Security-Policy "default-src 'self'; base-uri 'self'; connect-src 'none'; font-src 'self'; form-action 'self' mailto:; frame-ancestors 'none'; img-src 'self' data:; object-src 'none'; script-src 'self'; style-src 'self'; upgrade-insecure-requests" always;
+    add_header Cross-Origin-Opener-Policy "same-origin" always;
+    add_header Permissions-Policy "accelerometer=(), autoplay=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()" always;
+    add_header Referrer-Policy "strict-origin-when-cross-origin" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-Frame-Options "DENY" always;
+
+    gzip on;
+    gzip_min_length 1024;
+    gzip_types text/css text/javascript application/javascript application/xml image/svg+xml;
+
+    error_page 404 /404.html;
+
+    location = /404.html {
+        internal;
+    }
+
+    location = /healthz {
+        access_log off;
+        default_type text/plain;
+        return 200 "ok\n";
+    }
+
+    location ~ ^/privacy-policy/?$ {
+        return 301 /privacy/;
+    }
+
+    location ~ ^/(terms-of-use|terms-of-service)/?$ {
+        return 301 /terms/;
+    }
+
+    location ~ ^/(account-deletion|data-deletion)/?$ {
+        return 301 /delete-account/;
+    }
+
+    location ~ ^/help/?$ {
+        return 301 /support/;
+    }
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+}

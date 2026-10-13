@@ -7,7 +7,7 @@ ENV PORT=8080
 
 COPY nginx.conf.template /etc/nginx/templates/default.conf.template
 
-COPY index.html 404.html robots.txt sitemap.xml /usr/share/nginx/html/
+COPY index.html 404.html robots.txt sitemap.xml app-ads.txt /usr/share/nginx/html/
 COPY assets/ /usr/share/nginx/html/assets/
 COPY privacy/ /usr/share/nginx/html/privacy/
 COPY support/ /usr/share/nginx/html/support/

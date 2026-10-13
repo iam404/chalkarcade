@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#11161A">
   <meta name="description" content="How Chalk Arcade collects, uses, shares, protects and deletes personal data.">
-  <meta name="chalk-privacy-revision" content="2026-09-28-gaming-profile-records">
+  <meta name="chalk-privacy-revision" content="2026-10-14-consent-based-android-ads">
   <meta property="og:title" content="Privacy Policy — Chalk Arcade">
   <meta property="og:description" content="How Chalk Arcade handles account, gameplay, analytics and diagnostics data.">
   <meta property="og:type" content="article">
@@ -40,7 +40,7 @@
           This policy explains what Chalk Arcade collects, why we use it,
           when service providers process it, and the choices available to you.
         </p>
-        <time class="updated" datetime="2026-09-28">Effective and last updated: 28 September 2026</time>
+        <time class="updated" datetime="2026-10-14">Effective and last updated: 14 October 2026</time>
       </header>
 
       <section class="legal-section" id="scope">
@@ -58,7 +58,7 @@
           connection.
         </p>
         <div class="callout">
-          <p><strong>Short version:</strong> We do not sell personal data, show behavioural ads, or use advertising trackers. In the mobile app, product analytics and crash diagnostics are separate controls that start on; you can turn either one off at any time in Settings.</p>
+          <p><strong>Short version:</strong> Android versions with advertising enabled show Google AdMob ads. Ads may be personalised where your consent and applicable privacy choices permit; otherwise, Google may serve non-personalised or limited ads, or no ads. iOS versions do not request or display ads. Advertising privacy choices are separate from product analytics and crash diagnostics. In the mobile app, product analytics and crash diagnostics are separate controls that start on; you can turn either one off at any time in Settings.</p>
         </div>
       </section>
 
@@ -75,6 +75,7 @@
           <li><strong>Purchase and entitlement data.</strong> If paid products are offered in a future release, we may receive product identifiers, transaction or receipt status, storefront, and entitlement status. Apple or Google processes the payment. We do not receive your full payment-card details.</li>
           <li><strong>Mobile analytics.</strong> <em>Help improve Chalk Arcade</em> starts on. While it is on, Google Analytics for Firebase may process an app-instance or device identifier, app version and platform, general device and operating-system information, coarse geography derived from technical network information, lifecycle and product-interaction events, and bounded events such as screens viewed, a game launched or completed, duration ranges, and fixed error categories. Our app-authored Firebase events do not include your email, user ID, room code, authentication token, or free-form text. The same control also governs the gaming-profile record described above, which is stored with your account in Supabase rather than sent to Firebase. You can turn this control off in Settings.</li>
           <li><strong>Mobile crash diagnostics.</strong> <em>Share crash diagnostics</em> starts on. While it is on, Firebase Crashlytics may receive crash logs, stack traces, app state, app version, device and operating-system details, installation identifiers, and bounded context such as the current screen or game and a fixed error code. We do not deliberately attach your email or account ID to these reports. You can turn this control off independently in Settings.</li>
+          <li><strong>Android advertising.</strong> In Android versions with advertising enabled, Google AdMob and its User Messaging Platform process consent choices and may process IP address (including approximate location), device or advertising identifiers, app and device information, ad interactions, and diagnostic information to deliver and measure ads and prevent fraud. Personalised ads may use inferred interests or previous activity where your consent and applicable privacy choices permit. Google’s ad services use UMP consent signals and applicable settings to determine whether personalised, non-personalised, or limited ads can be served. Non-personalised ads may still use identifiers for frequency control, reporting, and fraud prevention. Chalk does not send your account email, room codes, game answers, or gaming-profile name to AdMob. Advertising is disabled on iOS.</li>
           <li><strong>Network and security data.</strong> When you use an online feature or visit this site, infrastructure providers may process IP address, date and time, requested resource, response status, device/browser type, and security or abuse signals in ordinary service logs.</li>
           <li><strong>Data kept on your device.</strong> A local guest's progress, preferences, audio and display choices, and other app state remain on the device. Signed-in session credentials are stored using protected device storage where available.</li>
         </ul>
@@ -109,6 +110,7 @@
           <li>answer support, privacy, and deletion requests;</li>
           <li>protect players and the service, enforce limits, prevent abuse, and diagnose availability problems;</li>
           <li>understand feature use and improve reliability while the relevant collection control is on, such as measuring how many players, including online guests, use a connected Game Center or Google Play Games profile; and</li>
+          <li>deliver, personalise where permitted, measure, and prevent fraud in advertising on enabled Android versions, subject to your consent and applicable privacy choices; and</li>
           <li>meet legal, accounting, and store-platform obligations.</li>
         </ul>
         <p>
@@ -124,12 +126,14 @@
       <section class="legal-section" id="sharing">
         <h2>5. When data is shared</h2>
         <p>
-          We do not sell personal data. We do not share personal data for
-          cross-context behavioural advertising. We disclose data only as
-          needed for the purposes above:
+          We disclose data to the providers below for the purposes described
+          in this policy. In enabled Android versions, this includes Google’s
+          processing of advertising data for personalised advertising where
+          your consent and applicable privacy choices permit:
         </p>
         <ul>
           <li><strong>Supabase.</strong> Provides hosted authentication, product configuration, database, storage, and realtime services for installation rollout, accounts, profiles, progress, collections, friends, online rooms, gaming-profile records, and related service data.</li>
+          <li><strong>Google AdMob and UMP (Android only).</strong> Provide advertising and consent management in Android versions where ads are enabled. Google may use the advertising data described above to personalise ads where permitted, including based on activity across apps or services. See <a href="https://policies.google.com/technologies/ads">How Google uses advertising data</a> and <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>. These services are separate from Firebase analytics and diagnostics. The website and iOS app do not request or display AdMob ads.</li>
           <li><strong>Google Firebase.</strong> Provides mobile Analytics and Crashlytics while the matching default-on control remains enabled. The controls are independent, and turning either one off stops future app-authorised collection for that product.</li>
           <li><strong>Apple and Google.</strong> Provide account sign-in and platform gaming services where available, including processing gaming-profile connections and achievement reports. They also operate the app stores and may process downloads, purchases, subscriptions, refunds, and device/storefront information under their own terms and privacy policies.</li>
           <li><strong>Cloudflare.</strong> Delivers this public website and may process ordinary network and security logs. This site does not load Firebase, advertising technology, or third-party analytics.</li>
@@ -150,6 +154,7 @@
       <section class="legal-section" id="choices">
         <h2>6. Your controls and choices</h2>
         <ul>
+          <li><strong>Android ad privacy:</strong> where required, a Google consent message appears before ad requests are permitted. Use Settings → Privacy → Ad privacy choices to revisit your choices when this entry is available. Turning off app analytics or crash diagnostics does not change advertising consent. Refusing consent does not block access to games. Depending on your choices and applicable settings, Google may serve non-personalised or limited ads, or no ads. Ads are requested only when the consent SDK permits them.</li>
           <li><strong>Analytics:</strong> Settings → Privacy → Help improve Chalk Arcade. Turning it off also stops future gaming-profile records; a record already stored stays with your account until the account is deleted or you ask us to delete it.</li>
           <li><strong>Crash diagnostics:</strong> Settings → Privacy → Share crash diagnostics.</li>
           <li><strong>Camera:</strong> use your device settings to revoke access; manual room-code entry remains available.</li>

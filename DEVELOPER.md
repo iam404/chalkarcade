@@ -64,6 +64,7 @@ index.html
 404.html
 robots.txt
 sitemap.xml
+app-ads.txt
 assets/
 privacy/
 terms/
@@ -93,3 +94,4 @@ Do not serve the repository root directly in production. Git metadata, README an
 This is a standalone website repository for now. No submodule has been configured as part of this documentation update.
 
 After this repository has its first reviewed commit published, the private game repository can add it as a submodule at the agreed path. Website changes should be committed here first; the game repository can then advance its submodule pointer to that commit. Keep game source and credentials in the private repository, not inside the website submodule.
+

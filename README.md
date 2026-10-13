@@ -1,7 +1,7 @@
 <h1 align="center">Chalk Arcade: Offline Puzzles</h1>
 
 <p align="center">
-  <strong>40+ games. One little arcade. No ads.</strong><br>
+  <strong>40+ games. One little arcade.</strong><br>
   Puzzles, words, brain teasers and board games for your next little break.
 </p>
 
@@ -18,11 +18,11 @@
   <a href="https://www.youtube.com/watch?v=ILkjiggieT8">Watch the gameplay preview ↗</a>
 </p>
 
-[![Chalk Arcade — No ads. Just play. A preview of Pocket Detective, Cup Shuffle and Rabbit Maze.](assets/campaign-2026-09/feature-graphic-1024x500.jpg)](https://chalkarcade.prab.ch/?stay=1)
+[Explore Chalk Arcade](https://chalkarcade.prab.ch/?stay=1)
 
 ## A quick challenge. Or a longer escape.
 
-Solve a little mystery, follow the cups, connect the pipes, or settle into a familiar favorite. Chalk Arcade brings a whole shelf of small games together, without ads interrupting the fun.
+Solve a little mystery, follow the cups, connect the pipes, or settle into a familiar favorite. Chalk Arcade brings a whole shelf of small games together, with sponsored feed cards in enabled Android versions. iPhone and iPad remain ad-free.
 
 - **One swipe, a new game.** Quick Play serves bite-sized challenges when you have a minute to spare.
 - **Find your favorites.** Explore the Library, from Sudoku and Crossword to Chess and Mini Nonogram. Save games to your Collection.
